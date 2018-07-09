@@ -1,55 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link rel="stylesheet" href="bootstrap-grid.css">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
 </head>
+
 <body>
+
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
+		<div class="card">
 
-				<div class="advert__header">
-					<a href="#" class="advert__avatar">
-						<img src="img/avatar.jpg" alt="Avatar">
-					</a>
-					<div class="advert__title">
-						<a href="#" class="advert__author">Aaron Weak</a>
-						<a href="#" class="advert__more">
-							<i class="fas fa-ellipsis-h"></i>
-						</a>
-						<div class="advert__sponsor">Sponsored &middot; <i class="fas fa-globe-americas"></i></div>
-					</div>
-				</div>
-
-				<div class="advert__body">
-					<p class="advert__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nobis dolorum possimus distinctio dicta culpa aut qui recusandae iure et, voluptate. Eius deleniti maxime, culpa est cupiditate voluptates inventore unde placeat sequi quod a consequatur, qui, sit saepe, fuga magnam repellat! Tempore minima, rerum soluta facilis sunt perspiciatis eos reiciendis.</p>
-					<div class="advert__bg">
-						<img src="img/testpic.jpg" alt="Background">
-					</div>
-					<div class="advert__text">
-						<a href="#" class="advert__link">QBICK.HOTELS.COM/NEWSLETTER</a>
-						<a href="#" class="advert__mainlink">Register now (For free!)</a>
-					</div>
-					<div class="advert__statistics">
-						<a href="#" class="advert__likes">342 likes</a>
-						<a href="#" class="advert__shares">7 shares</a>
-						<a href="#" class="advert__comments">12 comments</a>
-					</div>
-				</div>
-
-				<div class="advert__footer">
-					<a href="#" class="advert__like"><i class="far fa-thumbs-up"></i> Like</a>
-					<a href="#" class="advert__comment"><i class="far fa-comment"></i> Comment</a>
-					<a href="#" class="advert__share"><i class="fas fa-share"></i> Share</a>
-				</div>
-
+			<div class="card__topline">
+				<div class="card__source">Recommended page</div>
+				<a href="#" class="card__more-link">
+					<i class="fas fa-ellipsis-h"></i>
+				</a>
 			</div>
-		</div>
+
+			<div class="card__header">
+				<a href="#" class="card__avatar"></a>
+				<div class="card__titles">
+					<div class="card__titles-topline">
+						<a href="#" class="card__main-title">Jobbatical</a>
+						<a href="#" class="card__header-btn"><i class="fas fa-thumbs-up"></i> Like page</a> 
+					</div>
+					<p class="card__main-desc">Advertisment &middot; <i class="fas fa-globe-americas"></i></p>
+				</div>
+			</div>
+
+			<p class="card__text">✅ Are you a data scientist or a data analyst?<br/>✅ Are you excited about discovering information hidden in vast amounts of data?<br/>✅ Are you looking for an international adventure?<br/>Browse and apply to Data Science jobs in 40+ countries 🌍 Relocation has never been easier 💼</p>
+
+			<a href="#" class="card__bg">
+				<img src="img/bg.jpg" alt="Background">
+			</a>
+			<div class="card__main-link-wrap">
+				<div class="card__main-link-text">
+					<a href="#" class="card__main-link-top">jobbatical.com</a>
+					<a href="#" class="card__main-link-middle">Get a data science job abroad in 2018</a>
+					<a href="#" class="card__main-link-bottom">Jobs in Uber, Pipedrive, eResidency and more.</a>
+				</div>
+				<a href="#" class="card__main-link-btn">Learn more</a>
+			</div>
+
+			<div class="card__stats">
+				<a href="#" class="card__likes"><img src="img/icon.png" alt="Icon"> 16</a>
+				<div>
+					<a href="#" class="card__shares">5 comments</a> &nbsp;
+					<a href="#" class="card__shares">1 share</a>
+				</div>
+				
+			</div>
+
+			<div class="card__buttons">
+				<a href="#" class="card__like"><i class="far fa-thumbs-up"></i> Like</a>
+				<a href="#" class="card__commentbtn"><i class="far fa-comment"></i> Comment</a>
+				<a href="#" class="card__share"><i class="fas fa-share"></i> Share</a>
+			</div>
+
+			<a href="#" class="card__see-more-link">View previous comments</a>
+			<div class="card__comment">
+				<a href="#" class="card__comment-avatar">
+					<img src="img/comment-avatar.jpg" alt="Comment Avatar">
+				</a>
+				<div class="card__comment-body">
+					<span class="card__comment-content"><a href="#" class="card__comment-author">John Lock</a>Lorem ipsum dolor sit amet.</span>
+				</div>
+				<div class="card__comment-footer">
+					<a href="#" class="card__comment-like">Like</a> &middot;
+					<a href="#" class="card__comment-reply">Reply</a> &middot;
+					<a href="#" class="card__comment-time">2h</a>
+				</div>
+			</div>
+			<div class="card__comment-children">
+				<div class="card__comment">
+					<a href="#" class="card__comment-avatar">
+						<img src="img/comment-avatar2.jpg" alt="Comment Avatar">
+					</a>
+					<div class="card__comment-body">
+						<span class="card__comment-content"><a href="#" class="card__comment-author">Benjamin Russo</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem provident ipsa aperiam labore.</span>
+					</div>
+					<div class="card__comment-footer">
+						<a href="#" class="card__comment-like">Like</a> &middot;
+						<a href="#" class="card__comment-reply">Reply</a> &middot;
+						<a href="#" class="card__comment-time">1h</a>
+					</div>
+					<div class="card__comment">
+						<a href="#" class="card__comment-avatar">
+							<img src="img/comment-avatar3.jpg" alt="Comment Avatar">
+						</a>
+						<div class="card__comment-body">
+							<span class="card__comment-content"><a href="#" class="card__comment-author">Andrew Pelleteir</a>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="card__comment-footer">
+							<a href="#" class="card__comment-like">Like</a> &middot;
+							<a href="#" class="card__comment-reply">Reply</a> &middot;
+							<a href="#" class="card__comment-time">1h</a>
+						</div>
+					</div>
+					<div class="card__comment card__comment--input">
+						<a href="#" class="card__comment-avatar">
+							<img src="img/comment-avatar3.jpg" alt="Comment Avatar">
+						</a>
+						<input type="text" class="card__comment-input-reply" placeholder="Reply...">
+					</div>
+				</div>
+			</div>
+			<div class="card__comment card__comment--input card__comment-maininput">
+				<a href="#" class="card__comment-avatar">
+					<img src="img/comment-avatar3.jpg" alt="Comment Avatar">
+				</a>
+				<input type="text" class="card__comment-input-reply" placeholder="Comment...">
+			</div>
 	</div>
+
+	<script src="js/scripts.min.js"></script>
+
 </body>
 </html>
